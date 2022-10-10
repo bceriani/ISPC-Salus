@@ -1,0 +1,23 @@
+/* GLOBALES */
+
+html{
+    box-sizing: border-box; /* evita que los paddings etc afecten el ancho de los elementos */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Navbar */
+
+#uls {
+    display: flex;
+}
+
+.ul_nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+/* Header */
