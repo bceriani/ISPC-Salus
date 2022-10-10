@@ -10,6 +10,10 @@ html{
 
 /* Navbar */
 
+#div_nav{
+    background-color: green;
+}
+
 #uls {
     display: flex;
 }
@@ -18,6 +22,7 @@ html{
     display: flex;
     list-style: none;
     justify-content: space-between;
+
 }
 
 /* Header */
