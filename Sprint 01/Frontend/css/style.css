@@ -1,28 +1,72 @@
 /* GLOBALES */
-
-html{
-    box-sizing: border-box; /* evita que los paddings etc afecten el ancho de los elementos */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+:root {
+    --primary-color: #6ea8c9;
+    --secondary-color: #2b78a2;
+    --terciary-color: #b6dcb6;
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Roboto", sans-serif;
+}
+
+/* generales */
+.btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.62rem;
 }
 
 /* Navbar */
 
-#div_nav{
-    background-color: green;
-}
-
-#uls {
+.navbar {
+    width: 100%;
+    height: 80px;
     display: flex;
-}
-
-.ul_nav {
-    display: flex;
-    list-style: none;
     justify-content: space-between;
-
 }
 
+.navbar-list {
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+.navbar-list .btn {
+    color: white;
+}
+
+.sublist {
+    position: relative;
+}
+
+.sublist-items {
+    display: none;
+}
+
+.sublist:hover .sublist-items {
+    display: block;
+    position: absolute;
+    width: 150px;
+    padding-top: 1rem;
+}
+
+li::marker {
+    content: "";
+}
 /* Header */
