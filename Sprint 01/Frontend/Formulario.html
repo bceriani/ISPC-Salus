@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es" id="salus" class>
+<head>
+	<title id="formulario">Formulario Registro</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Salus, salud, tratamientos">
+	
+	<meta name="author" content="Grupo88-ispc22">
+	<meta name="description" content="Salus es una página web destinada a la gestión de Historias Clínicas unificadas tanto para médicos como para pacientes.">
+	<meta name="robots" content="index">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="./app.js"></script>
+
+</head>
+
+<body class="fondo-formulario">
+	<header>
+		<h2 class="logo">Salus</h2>
+		<input type="checkbox" id="check">
+		<label for="check" class="mostrar-menu">&#8801</label>
+
+		<nav class="menu">
+			<a href="index.html">Inicio</a></li>
+			<a href="nosotros.html">Sobre nosotros</a>
+			<a href="Formulario.html">Registro</a>
+			<label for="check" class="esconder-menu">&#215</label>
+   		</nav>
+	</header>
+	<section class="form-register">
+		<h4>Formulario Registro</h4>
+		<input class="controls" type="text" name="nombres" placeholder="Ingrese su nombre">
+		<input class="controls" type="text" name="apellidos" placeholder="Ingrese su apellido">
+		<input class="controls" type="email" name="email" placeholder="Ingrese su email">
+		<input class="controls" type="password" name="contraseña" placeholder="Ingrese su contraseña">
+		<p>Estoy de acuerdo con <a href="#">Términos y Condiciones</a></p>
+		<a href="#"><input class="botons" type="submit" value="PACIENTE"></a>
+		<a href="#"><input class="botons" type="submit" value="MÉDICO"></a>
+		<p><a href="#">¿Ya tengo cuenta?</a></p>
+	</section>
+
+</body>
+</html>
