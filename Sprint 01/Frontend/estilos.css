@@ -1,0 +1,167 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	height: 100px;
+	background: #2b78a2;
+	padding: 0 50px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	color: #fff;
+	font-family: 'roboto', sans-serif;
+	font-weight: 200;
+
+}
+.menu a{
+	color: #fff;
+	text-transform: uppercase; /*mayuscula*/
+	text-decoration: none;
+	padding: 0 10px;
+	transition: 0.4s;
+
+}
+.mostrar-menu,
+.esconder-menu{
+	font-size: 30px;
+	cursor: pointer; /*manito en el cursor*/
+	display: none; /*solo para verse en la version responsive*/
+	transition: 0.4s;
+}
+.mostrar-menu{
+	order: 1;
+}
+.menu a:hover,
+.mostrar-menu,
+.esconder-menu{
+	color: #b6dcb6;
+}
+#check{
+	display: none;/*solo para que no se vean*/
+}
+
+
+/*FORMULARIO*/
+.fondo-formulario{
+	background-image: url(img/fondo-form3.jpg);
+}
+.form-register{
+	width: 400px;
+	background: #004d40;
+	padding: 30px;
+	margin:auto;
+	margin-top: 100px:
+	border-radius:5px;
+	font-family:'calibri';
+	color: white; 
+	box-shadow: 7px 13px 37px #000;
+}
+.form-register h4 {
+	font-size: 22px;
+	margin-bottom: 20px;
+
+}
+.controls {
+	width: 100%;
+	background: #004d40;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #93ffa1;
+	font-family: 'calibri';
+	font-size: 18px;
+	color:white;
+}
+.form-register p {
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+.form-register a{
+	color:white;
+	text-decoration: none;
+}
+.form-register a:hover{
+	color: white;
+	text-decoration: underline;
+}
+.form-register .botons{
+	display: inline-block;
+	width:100%;
+	padding: 12px;
+	justify-content: center;
+	background:#00796b;
+	margin: 8px 0;
+	border:none;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 1px 2px #6ea8c9;
+	cursor: pointer;
+	letter-spacing: 3px;
+	text-decoration: none;
+
+}
+
+
+img{
+	width: 100%;
+	height: 500px;
+}
+/*.header {
+	padding: 20px;
+	background: #2b78a2; 
+	justify-content: space-between;
+	color: #FFF;
+	display: flex;
+	font-family: 'poppins';
+}
+.header h1{
+	font-family: 'roboto', sans-serif;
+}
+.header{
+	display: flex;
+	min-height: 70px;
+	justify-content: space-between;/*ubicar los elementos
+	en el eje principal*/
+	/*align-items: center;
+	background:#2f4f4f;
+	color: #FFF;
+	padding: 10px;
+	animation-duration: 0.2s; 
+}/*
+
+/*<nav><a href="index.html">Inicio</a></li>
+  <a href="nosotros.html">Sobre nosotros</a>
+  <a href="Formulario.html">Registro</a>
+</nav>
+div class img-encabezado
+h2- Informacion fundamental al alcance de tu mano-h2
+
+
+*/
+/*.header.div.nombre-app{
+	display: inline-block;
+	position: relative;
+	color: white;
+	right: 10px;
+	font-family: 'roboto'
+}
+display: flex;
+	width:100%;
+	padding: 12px;
+	justify-content: center;
+	background:#00796b;
+	border:none;
+	color: white;
+	margin:16px 0;
+	border-radius: 10px;
+	box-shadow: 1px 2px #6ea8c9;
+	text-decoration: none;
+*/
