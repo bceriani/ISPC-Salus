@@ -259,14 +259,12 @@
 /* registration form*/
 .form-background {
     background-image: url("../img/form-background.jpg");
-    margin-top: -7rem;
 }
 .form-register {
     width: 400px;
     background: #004d40;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
     border-radius: 5px;
     font-family: "calibri";
     color: white;
@@ -384,3 +382,5 @@
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
+
+/* contact form*/
