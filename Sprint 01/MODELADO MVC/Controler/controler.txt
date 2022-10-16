@@ -1,0 +1,1 @@
+aqui iran las funciones que controlaran el flujo de inforcamcion desde y hacia front y backend respectivamente
