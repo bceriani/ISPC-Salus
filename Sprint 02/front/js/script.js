@@ -1,10 +1,12 @@
+
 /// FORMULARIO CONTACTO
+
 function onEnviar(){
     const nombres = document.querySelector('[data-form-nombres]');
     const apellidos = document.querySelector('[data-form-apellidos]');
     const email = document.querySelector('[data-form-email]');
     const mensajes = document.querySelector('[data-form-mensajes]');
-    alert(nombres.value+" "+apellidos.value+" "+email.value+" "+mensajes.value+" 'llamar controlador'")
+    alert(nombres.value+" "+apellidos.value+" "+email.value+" "+mensajes.value+" 'llamar controlador'");
 }
 
 
