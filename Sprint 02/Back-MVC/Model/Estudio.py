@@ -53,11 +53,11 @@ class Estudio:
         return cadena
     #METODOS MOSTRAR Y CARGAR
     def cargar(self):
-        self.ID_EM = input("ID-EM: ")
+        self.ID_EM = int(input("ID-EM: "))
         self.tipo = input("TIPO: ")
         self.fecha = input("FECHA: ")
-        self.paciente = input("PACIENTE: ")
-        self.medicoSolicitante = input("MEDICO SOLICITANTE: ")
+        self.paciente = int(input("PACIENTE: "))
+        self.medicoSolicitante = int(input("MEDICO SOLICITANTE: "))
         self.ubicacion = input("UBICACION: ")
     def mostrar(self):
         print("ID-EM: ",self.ID_EM)
