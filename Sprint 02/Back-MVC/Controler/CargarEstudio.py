@@ -15,7 +15,7 @@ miCursor = miConexion.cursor()
 miCursor.execute("""
         CREATE TABLE if not exists EM (
         ID_EM integer Primary key autoincrement,
-        Tipo varchar (40),
+        Tipo varchar (45),
         Fecha date,
         Paciente integer,
         MedicoSolicitante integer,
