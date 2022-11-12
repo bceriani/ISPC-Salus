@@ -1,9 +1,7 @@
-class Medico():
+class UsuarioMedico():
     #VARIABLES O CAMPOS
-    __DNI = 0
-    __ID_M = 0
+    __dniM = 0
     __matricula = 0
-    __especialidad = "SIN DATO"
     __nombre = "SIN DATO"
     __apellido = "SIN DATO"
     __telefono = "SIN DATO"
@@ -12,11 +10,9 @@ class Medico():
     __email = "SIN DATO"
 
     #CONSTRUCTOR
-    def __init__(self, nD=0, idM=0, m=0, e="SIN DATO", n="SIN DATO", a="SIN DATO", t="SIN DATO", c="SIN DATO", l="SIN DATO", eM="SIN DATO"):
-        self.DNI = nD
-        self.ID_M = idM
-        self.matricula = m
-        self.especialidad = e
+    def __init__(self, nD=0, idM=0, n="SIN DATO", a="SIN DATO", t="SIN DATO", c="SIN DATO", l="SIN DATO", eM="SIN DATO"):
+        self.dniM = nD
+        self.matricula = idM
         self.nombre = n
         self.apellido = a
         self.telefono = t
@@ -25,14 +21,10 @@ class Medico():
         self.email = eM
 
     #METODOS GETS
-    def get_DNI(self):
-        return self.DNI
-    def get_ID_M(self):
-        return self.ID_M
+    def get_DniM(self):
+        return self.dniM
     def get_Matricula(self):
         return self.matricula
-    def get_Especialidad(self):
-        return self.especialidad
     def get_Nombre(self):
         return self.nombre
     def get_Apellido(self):
@@ -47,14 +39,10 @@ class Medico():
         return self.email
 
     # METODOS SETS
-    def set_DNI(self, nD):
-        self.DNI = nD
-    def set_ID_M(self, idM):
-        self.ID_M = idM
+    def set_DniM(self, nD):
+        self.dniM = nD
     def set_Matricula(self, m):
         self.matricula = m
-    def set_Especialidad(self, e):
-        self.especialidad = e
     def set_Nombre(self, n):
         self.nombre = n
     def set_Apellido(self, a):
@@ -70,26 +58,22 @@ class Medico():
 
     #METODO __str__
     def __str__(self):
-        cadena = str(self.DNI)+", "+str(self.ID_M)+", "+str(self.matricula)+", "+self.especialidad+", "+self.nombre+", "+self.apellido+", "+self.telefono+", "+self.celular+", "+self.localidad+", "+self.email
+        cadena = str(self.dniM)+", "+str(self.matricula)+", "+self.nombre+", "+self.apellido+", "+self.telefono+", "+self.celular+", "+self.localidad+", "+self.email
         return cadena
 
     #METODOS MOSTRAR Y CARGAR
     def cargar(self):
-        self.DNI = int(input("DNI: "))
-        self.ID_M = int(input("ID_M: "))
+        self.dniM = int(input("DNI MEDICO: "))
         self.matricula = int(input("MATRICULA: "))
-        self.especialidad = input("ESPECIALIDAD: ")
         self.nombre = input("NOMBRE: ")
         self.apellido = input("APELLIDO: ")
         self.telefono = input("TELEFONO: ")
         self.celular = input("CELULAR: ")
         self.localidad = input("LOCALIDAD: ")
         self.email = input("EMAIL: ")
-    def cargar(self):
-        print("DNI: ", self.DNI)
-        print("ID_M: ", self.ID_M)
-        print("MATRICULA: ", self.matricula))
-        print("ESPECIALIDAD: ", self.especialidad)
+    def mostrar(self):
+        print("DNI MEDICO: ", self.dniM)
+        print("MATRICULA: ", self.matricula)
         print("NOMBRE: ", self.nombre)
         print("APELLIDO: ", self.apellido)
         print("TELEFONO: ", self.telefono)

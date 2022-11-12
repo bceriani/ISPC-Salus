@@ -1,6 +1,6 @@
-class Paciente():
+class UsuarioPaciente():
     #VARIABLES O CAMPOS
-    __DNI = 0
+    __dniU = 0
     __nombre = "SIN DATO"
     __apellido = "SIN DATO"
     __telefono = "SIN DATO"
@@ -9,15 +9,15 @@ class Paciente():
 
     #CONSTRUCTOR
     def __init__(self, nD=0, n="SIN DATO", a="SIN DATO", t="SIN DATO", oS="SIN DATO", mC=0):
-        self.DNI = nD
+        self.dniU = nD
         self.nombre = n
         self.apellido = a
         self.telefono = t
         self.obraSocial = oS
         self.medicoCabecera = mC
     #METODOS GETS
-    def get_DNI(self):
-        return self.DNI
+    def get_DniU(self):
+        return self.dniU
     def get_Nombre(self):
         return self.nombre
     def get_Apellido(self):
@@ -30,8 +30,8 @@ class Paciente():
         return self.medicoCabecera
 
     # METODOS SETS
-    def set_DNI(self, nD):
-        self.DNI = nD
+    def set_DniU(self, nD):
+        self.dniU = nD
     def set_Nombre(self, n):
         self.nombre = n
     def set_Apellido(self, a):
@@ -45,19 +45,19 @@ class Paciente():
 
     #METODO __str__
     def __str__(self):
-        cadena = str(self.DNI)+", "+self.nombre+", "+self.apellido+", "+self.telefono+", "+self.obraSocial+", "+str(self.medicoCabecera)
+        cadena = str(self.dniU)+", "+self.nombre+", "+self.apellido+", "+self.telefono+", "+self.obraSocial+", "+str(self.medicoCabecera)
         return cadena
 
     #METODOS MOSTRAR Y CARGAR
     def cargar(self):
-        self.DNI = int(input("DNI: "))
+        self.dniU = int(input("DNI USUARIO: "))
         self.nombre = input("NOMBRE: ")
         self.apellido = input("APELLIDO: ")
         self.telefono = input("TELEFONO: ")
         self.obraSocial = input("OBRA SOCIAL: ")
         self.medicoCabecera = int(input("MEDICO CABECERA: "))
     def mostrar(self):
-        print("DNI: ", self.DNI)
+        print("DNI USUARIO: ", self.dniU)
         print("NOMBRE: ", self.nombre)
         print("APELLIDO: ", self.apellido)
         print("TELEFONO: ", self.telefono)
