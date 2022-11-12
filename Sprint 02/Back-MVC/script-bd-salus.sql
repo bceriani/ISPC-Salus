@@ -17,7 +17,8 @@ create table UsuarioPaciente(
 	Apellido varchar(45) not null,
 	Telefono varchar(45) not null,
 	ObraSocial varchar(45) not null,
-	MedicoDeCabecera  int
+	MedicoDeCabecera  int,
+	foreign key (MedicoDeCabecera) references UsuarioMedico(DniM)
 );
 
 create table EstudiosMedicos (
