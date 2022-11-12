@@ -12,12 +12,12 @@ miCursor.execute("""
         MedicoCabecera integer not null)
 """)
 pacientes = [
-    (11111111, "Pepito", "Perez", "4895786", "PAMI", 1),
-    (22222222, "Pepito2", "Perez2", "4895786", "PAMI2", 2),
-    (33333333, "Pepito3", "Perez3", "4895786", "PAMI3", 3),
-    (44444444,"Pepito4", "Perez4", "4895786", "PAMI4", 4)
+    (11111111, "Pepito", "Perez", "4895786", "PAMI", 1111112),
+    (22222222, "Pepito2", "Perez2", "4895786", "PAMI2", 1111113),
+    (33333333, "Pepito3", "Perez3", "4895786", "PAMI3", 1111114),
+    (44444444,"Pepito4", "Perez4", "4895786", "PAMI4", 1111115)
 ]
 miCursor.executemany("INSERT INTO UsuarioPaciente VALUES (?, ?, ?, ?, ?, ?)", pacientes)
-miCursor.execute("INSERT INTO UsuarioPaciente VALUES (55555555, 'Pepito5', 'Perez5', 4895786, 'PAMI5', 5)")
+miCursor.execute("INSERT INTO UsuarioPaciente VALUES (7777777, 'Pepito7', 'Perez7', 4895786, 'PAMI7', 1111116)")
 miConexion.commit()
 miConexion.close()
